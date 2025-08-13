@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // สำหรับ GitHub Pages ใช้ '/<repository-name>/'
+  base: 'LAB3_Reactjs_Fundamentals', // สำหรับ GitHub Pages ใช้ '/<repository-name>/'
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
