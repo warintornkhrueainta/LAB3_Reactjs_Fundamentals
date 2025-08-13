@@ -1,13 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/react-workshop/', // ต้องมี slash นำหน้าและปิดท้าย
   plugins: [react()],
-  base: 'LAB3_Reactjs_Fundamentals', // สำหรับ GitHub Pages ใช้ '/<repository-name>/'
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: false, // ปิดสำหรับ production
-  }
 })
